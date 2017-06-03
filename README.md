@@ -15,3 +15,7 @@ This is also an early project for me, so things are a bit amature and messy.
 This program relies on ImDisk Toolkit to be installed to create the RAM disks. It can be found here:
 
 https://sourceforge.net/projects/imdisk-toolkit/
+
+Early usage video here: https://www.youtube.com/watch?v=b4W776OoY5s
+
+![Alt text](https://github.com/havenvanheusen/RAMDiskCopy/blob/master/RAMDiskCopy.jpg?raw=true "Optional Title")

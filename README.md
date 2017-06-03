@@ -18,4 +18,4 @@ https://sourceforge.net/projects/imdisk-toolkit/
 
 Early usage video here: https://www.youtube.com/watch?v=b4W776OoY5s
 
-![Alt text](https://github.com/havenvanheusen/RAMDiskCopy/blob/master/RAMDiskCopy.jpg?raw=true "Optional Title")
+![Alt text](https://github.com/havenvanheusen/RAMDiskCopy/blob/master/RAMDiskCopy.jpg?raw=true "RAMDiskCopy")

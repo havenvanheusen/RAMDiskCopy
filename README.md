@@ -11,3 +11,7 @@ Works great for Steam games, virtual machines and many other uses. Won't work on
 place for that, but I wouldn't recommend trying to circumvent them.
 
 This is also an early project for me, so things are a bit amature and messy.
+
+This program relies on ImDisk Toolkit to be installed to create the RAM disks. It can be found here:
+
+https://sourceforge.net/projects/imdisk-toolkit/

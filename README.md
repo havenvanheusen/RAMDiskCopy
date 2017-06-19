@@ -1,4 +1,7 @@
 # RAMDiskCopy
+
+Download the latest version here: https://github.com/havenvanheusen/RAMDiskCopy/raw/master/WindowsApplication2/bin/Release/RAMDiskCopy.exe
+
 Creates a RAM disk and copies a specified folder to it leaving a junction so that it may be accessed as if it never left all while
 leaving a backup copy of the folder behind in case disaster strikes and your RAM disk goes bye-bye. Optionally, it can also copy the
 folder back to its original location so that any changes made to it are kept between reboots.

@@ -249,7 +249,7 @@
     End Sub
 
     Private Sub AboutButton_Click(sender As Object, e As EventArgs) Handles AboutButton.Click
-        MsgBox("RAMDiskCopy Alpha Version 0.3.1 created by Haven Van Heusen 2017", MsgBoxStyle.OkOnly, "")
+        MsgBox("RAMDiskCopy Alpha Version 0.3.2 created by Haven Van Heusen 2017", MsgBoxStyle.OkOnly, "")
     End Sub
     Private Sub Form_FormClosing(ByVal sender As Object, ByVal e As FormClosingEventArgs) Handles Me.FormClosing
         If thereIsDisk = 1 Then
@@ -266,6 +266,21 @@
         End If
         If DontCopyCheck.Checked = False Then
             DontCopyLabel.Visible = False
+        End If
+    End Sub
+
+    Private Sub drag_DragDrop(sender As System.Object, e As System.Windows.Forms.DragEventArgs) Handles Me.DragDrop
+        Dim DropFolder() As String = CType(e.Data.GetData("FileDrop", True), String())
+        For Each DropPath As String In DropFolder
+            If Directory.Exists(DropPath) = True Then
+                PathBox.Text = DropPath
+            End If
+        Next
+    End Sub
+
+    Private Sub drag_DragEnter(sender As System.Object, e As System.Windows.Forms.DragEventArgs) Handles Me.DragEnter
+        If e.Data.GetDataPresent(DataFormats.FileDrop) Then
+            e.Effect = DragDropEffects.Copy
         End If
     End Sub
 End Class

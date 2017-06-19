@@ -274,6 +274,9 @@
         For Each DropPath As String In DropFolder
             If Directory.Exists(DropPath) = True Then
                 PathBox.Text = DropPath
+                Dim dInfo As New DirectoryInfo(PathBox.Text)
+                Dim sizeOfDir As Long = DirectorySize(dInfo, True)
+                Label6.Text = Math.Round(sizeOfDir / 1024 / 1024) & " MB"
             End If
         Next
     End Sub
